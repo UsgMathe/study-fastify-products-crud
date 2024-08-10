@@ -23,7 +23,7 @@ app.get('/', (_, reply) => {
   reply.send('🔥 Hello World! :)');
 });
 
-app.listen({ host: env.HOST, port: env.PORT }, (err, address) => {
+app.listen({ host: env.SERVER_HOST, port: env.SERVER_PORT }, (err, address) => {
   if (err) {
     console.error(err);
     process.exit(1);

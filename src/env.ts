@@ -1,8 +1,8 @@
 import z from 'zod';
 
 const envSchema = z.object({
-  HOST: z.string().ip(),
-  PORT: z.coerce.number(),
+  SERVER_HOST: z.string().ip(),
+  SERVER_PORT: z.coerce.number(),
   DATABASE_HOST: z.string(),
   DATABASE_USER: z.string(),
   DATABASE_PASSWORD: z.string(),
