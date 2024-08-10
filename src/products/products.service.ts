@@ -1,7 +1,6 @@
 import { ResultSetHeader } from 'mysql2';
 import { ERRORS } from '../constants/errors';
 import { connection } from '../database/mysql.db';
-import { FormattedError } from '../utils/errorFormatter';
 import { CreateProduct, Product } from './products.schema';
 
 export async function useProductsDatabase() {

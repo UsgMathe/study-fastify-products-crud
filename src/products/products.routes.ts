@@ -1,6 +1,6 @@
 import { ERRORS } from '../constants/errors';
 import { FastifyInstanceWithValidator } from '../types';
-import { formatError, FormattedError } from '../utils/errorFormatter';
+import { FormattedError } from '../utils/errorFormatter';
 import { CreateProductSchema, ProductIdSchema } from './products.schema';
 import { useProductsDatabase } from './products.service';
 

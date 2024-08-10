@@ -4,9 +4,9 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from 'fastify-type-provider-zod';
+import { initializeDatabase } from './database/initializeDatabase';
 import { env } from './env';
 import { errorHandler } from './error-handler';
-import { initializeDatabase } from './database/initializeDatabase';
 import { productsController } from './products/products.routes';
 
 initializeDatabase();
