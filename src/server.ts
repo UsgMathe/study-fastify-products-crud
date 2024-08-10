@@ -17,7 +17,7 @@ app.setErrorHandler(errorHandler);
 app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
-app.register(productsController, { prefix: 'products' });
+app.register(productsController, { prefix: 'product' });
 
 app.get('/', (_, reply) => {
   reply.send('🔥 Hello World! :)');
